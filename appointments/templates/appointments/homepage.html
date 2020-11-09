@@ -1,0 +1,63 @@
+{% extends 'appointments/base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+
+<div class="row justify-content-center my-3">
+	<div class="col-5">
+  		<img src="{% static 'appointments/kin.png' %}" class="img-fluid">
+	</div>
+</div>
+
+<div class="row justify-content-center mb-3">
+	<div class="col-md-9 text-center">
+		<h1 id="hometext" class="font-weight-bold">Kin's Paradise</h1>
+  		<a href="{% url 'set_appointment' %}" class="btn btn-secondary my-2">Set appointment</a>
+	</div>
+</div>
+
+<h2 class="mt-5">Portfolio</h2>
+<hr>
+<div class="album py-5 bg-light">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4 col-md-6">
+				<div class="card mb-4 box-shadow">
+					<img class="card-img-top" data-src="#">
+			  		<a href="">
+			    		<img src="#" class="img-fluid mb-2">
+			  		</a>
+			  		<div class="card-body">
+			  			<p class="card-text">My first project</p>
+			  		</div>
+			  	</div>
+			</div>
+			<div class="col-lg-4 col-md-6">
+				<div class="card mb-4 box-shadow">
+					<img class="card-img-top" data-src="#">
+			  		<a href="">
+			    		<img src="#" class="img-fluid mb-2">
+			  		</a>
+			  		<div class="card-body">
+			  			<p class="card-text">My second project</p>
+			  		</div>
+			  	</div>
+			</div>
+			<div class="col-lg-4 col-md-6">
+				<div class="card mb-4 box-shadow">
+					<img class="card-img-top" data-src="#">
+			  		<a href="">
+			    		<img src="#" class="img-fluid mb-2">
+			  		</a>
+			  		<div class="card-body">
+			  			<p class="card-text">My third project</p>
+			  		</div>
+			  	</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+{% endblock %}
